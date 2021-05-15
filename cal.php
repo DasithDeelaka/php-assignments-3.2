@@ -19,9 +19,9 @@
             <?php
                 // Getting parameters and the operator from the form by GET method
                 error_reporting(0);
-                $param1 = $_GET["param1"];
-                $param2 = $_GET["param2"];
-                $operator = $_GET["operator"];
+                $param1 = $_GET["param1"] ?? null;
+                $param2 = $_GET["param2"] ?? null;
+                $operator = $_GET["operator"] ?? null;
 
                 // Checking all the parameters are numeric
                 $param1_numeric = is_numeric($param1);
